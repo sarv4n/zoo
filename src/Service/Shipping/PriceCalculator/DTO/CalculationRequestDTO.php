@@ -21,8 +21,7 @@ readonly class CalculationRequestDTO implements CalculationRequestDTOInterface
     public function __construct(
         mixed $transferCompanyId,
         ShipmentDTOInterface $shipmentDTO,
-    )
-    {
+    ) {
         $this->transferCompanyId = $transferCompanyId;
         $this->shipmentDTO = $shipmentDTO;
     }

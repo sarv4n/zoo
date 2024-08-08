@@ -14,14 +14,14 @@ class PackGroupHandler implements HandlerInterface
 
         if ($weight > 0 && $weight <= 10) {
             $data->setPayload(['price' => 20]);
-        }elseif ($weight > 10) {
+        } elseif ($weight > 10) {
             $data->setPayload(['price' => 100]);
         }
     }
 
     public function supports(mixed $data): bool
     {
-        return $data instanceof DataInterface &&
-            $data->getTransferCompany()->getName() === TransferCompaniesNamesBag::PACK_GROUP;
+        return $data instanceof DataInterface
+               && $data->getTransferCompany()->getName() === TransferCompaniesNamesBag::PACK_GROUP;
     }
 }

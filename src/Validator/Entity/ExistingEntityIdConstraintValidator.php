@@ -36,9 +36,10 @@ class ExistingEntityIdConstraintValidator extends ConstraintValidator
 
         if ($record == null) {
             $this->context->buildViolation($constraint->message)
-                ->setParameter('{{ entity }}', $constraint->entity)
-                ->setParameter('{{ value }}', $value)
-                ->addViolation();
+                          ->setParameter('{{ entity }}', $constraint->entity)
+                          ->setParameter('{{ value }}', $value)
+                          ->addViolation()
+            ;
         }
 
     }

@@ -11,8 +11,7 @@ class CalculationRequestDTOFactory
     public function __construct(
         private ShipmentDTOFactory $shipmentDTOFactory,
         private ValidatorService $validatorService,
-    )
-    {
+    ) {
     }
 
     public function create(array $data): CalculationRequestDTO

@@ -9,8 +9,7 @@ class QueryService
 {
     public function __construct(
         private TransferCompanyRepository $transferCompanyRepository,
-    )
-    {
+    ) {
     }
 
     public function getAll(): array

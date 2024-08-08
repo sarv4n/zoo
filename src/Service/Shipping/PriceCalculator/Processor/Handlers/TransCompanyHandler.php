@@ -19,7 +19,7 @@ class TransCompanyHandler implements HandlerInterface
 
     public function supports(mixed $data): bool
     {
-        return $data instanceof DataInterface &&
-            $data->getTransferCompany()->getName() === TransferCompaniesNamesBag::TRANS_COMPANY;
+        return $data instanceof DataInterface
+               && $data->getTransferCompany()->getName() === TransferCompaniesNamesBag::TRANS_COMPANY;
     }
 }

@@ -24,11 +24,11 @@ class TransferCompanyController extends RestController
     ): JsonResponse {
         return $this->makeJsonResponse(
             array_map(
-                function($item) use ($normalizer) {
+                function ($item) use ($normalizer) {
                     return $normalizer->normalize($item);
                 },
-                $queryService->getAll()
-            )
+                $queryService->getAll(),
+            ),
         );
     }
 }

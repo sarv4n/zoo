@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Common\DTO\Shipment;
+
 use phpDocumentor\Reflection\Types\Integer;
 use Symfony\Component\Validator\Constraints as Assert;
 
@@ -16,8 +17,7 @@ readonly class ShipmentDTO implements ShipmentDTOInterface
 
     public function __construct(
         mixed $weight,
-    )
-    {
+    ) {
         $this->weight = $weight;
     }
 

@@ -29,8 +29,7 @@ class ShippingController extends RestController
         ValidatorService $validatorService,
         DataFactory $dataFactory,
         CalculatorProcessor $processor,
-    ): JsonResponse
-    {
+    ): JsonResponse {
         $requestData = $request->query->all();
 
         $requestDTO = $requestDTOFactory->create($requestData);
@@ -45,7 +44,7 @@ class ShippingController extends RestController
                 sprintf(
                     ExceptionMessagesBag::TRANSFER_COMPANY_IS_NOT_SUPPORTED,
                     $data->getTransferCompany()->getName(),
-                )
+                ),
             );
         }
 

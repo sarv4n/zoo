@@ -10,7 +10,7 @@ class ShipmentDTOFactory
     public function create(array $data): ShipmentDTOInterface
     {
         return new ShipmentDTO(
-            (float) $data['weight'] ?? null
+            (float) $data['weight'] ?? null,
         );
     }
 }
