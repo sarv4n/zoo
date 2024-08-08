@@ -3,7 +3,7 @@
 
  make build
 
- composer install (отказываемся от автогенерации докер-контейнера БД для doctrine) 
+ composer install (отказываемся от добавления базовых значений от doctrine)
 
  make up
 
