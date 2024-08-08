@@ -10,6 +10,7 @@
 
 Переходим в php-fpm 
  php bin/console doctrine-migration-migrate
+ bin/console doctrine:fixtures:load
 
 Рут калькулятора:
 http://localhost:8085/shipping/price-calculator
